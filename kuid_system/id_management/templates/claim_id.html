@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6">
+        <div class="card">
+            <div class="card-header bg-info text-white">
+                <h3>Claim Student ID</h3>
+            </div>
+            <div class="card-body">
+                <div class="mb-4">
+                    <h5>ID Details</h5>
+                    <p><strong>ID Number:</strong> {{ id_record.id_number }}</p>
+                    <p><strong>Student Name:</strong> {{ id_record.student_name }}</p>
+                    <p><strong>Course:</strong> {{ id_record.course }}</p>
+                </div>
+                
+                <form method="post">
+                    {% csrf_token %}
+                    {{ form|crispy }}
+                    <p class="text-muted">You should have received a verification code from the admin who registered your ID.</p>
+                    <button type="submit" class="btn btn-primary mt-3">Verify and Claim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}  <!-- Note: specifying the block name is best practice -->

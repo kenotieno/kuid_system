@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4">Search Results</h2>
+    
+    {% if search_performed %}
+        {% if results %}
+        <div class="table-responsive">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>ID Number</th>
+                        <th>Student Name</th>
+                        <th>Course</th>
+                        <th>Found Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {% for id in results %}
+                    <tr>
+                        <td>{{ id.id_number }}</td>
+                        <td>{{ id.student_name }}</td>
+                        <td>{{ id.course }}</td>
+                        <td>{{ id.found_date|date:"M d, Y" }}</td>
+                        <td>
+                            <a href="{% url 'claim-id' id.pk %}" class="btn btn-sm btn-success">Claim</a>
+                        </td>
+                    </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+        </div>
+        {% else %}
+        <div class="alert alert-info">
+            No matching IDs found in our database. Please check back later or visit the university administration office.
+        </div>
+        {% endif %}
+    {% endif %}
+</div>
+{% endblock %}

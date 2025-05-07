@@ -1,0 +1,125 @@
+/* KU Lost & Found ID System — refreshed styles */
+
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+:root {
+    --ku-dark:   #002b55;
+    --ku-mid:    #0063ad;
+    --ku-accent: #ffd54f;
+    --ku-bg:     #fafbfc;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: var(--ku-bg);
+    color: #333;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ────── NAVBAR ────── */
+.navbar {
+    background: linear-gradient(90deg, var(--ku-dark), var(--ku-mid));
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand span {
+    font-weight: 600;
+    letter-spacing: 0.4px;
+}
+
+.nav-link {
+    color: #fff !important;
+    transition: color 0.25s;
+}
+
+.nav-link:hover,
+.navbar .btn-info:hover {
+    color: var(--ku-accent) !important;
+}
+
+.navbar .btn-info {
+    background: var(--ku-accent);
+    border: none;
+    color: #000;
+    font-weight: 600;
+}
+
+/* ────── ALERTS ────── */
+.alert {
+    border-radius: 0.6rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* ────── CARD EFFECT ────── */
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s cubic-bezier(.2,.8,.2,1), box-shadow 0.3s cubic-bezier(.2,.8,.2,1);
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* ────── BUTTONS ────── */
+.btn-primary,
+.btn-info {
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover,
+.btn-info:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* ────── FOOTER ────── */
+footer {
+    margin-top: auto;
+    background: #fff;
+    border-top: 1px solid #e5e7eb;
+}
+
+footer p {
+    color: #6b7280;
+}
+
+/* ────── FADE‑IN ANIMATION ────── */
+.fade-in {
+    animation: fadeIn 0.6s ease-out both;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ────── SCROLL‑TOP BUTTON ────── */
+.scroll-top-btn {
+    position: fixed;
+    bottom: 1.25rem;
+    right: 1.25rem;
+    width: 2.75rem;
+    height: 2.75rem;
+    border-radius: 50%;
+    border: none;
+    background: var(--ku-mid);
+    color: #fff;
+    font-size: 1.2rem;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    display: none;
+    z-index: 1000;
+    transition: opacity 0.3s;
+}

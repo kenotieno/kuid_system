@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="home-bg">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-10 text-center">
+
+                {% if user.is_authenticated %}
+                    <h1 class="mb-4 fw-bold">Welcome {{ user.username }}!</h1>
+                    <p class="lead text-muted mb-5">Glad to have you back. Choose an action below:</p>
+                {% else %}
+                    <h1 class="mb-4 fw-bold">Kenyatta University Lost & Found ID System</h1>
+                    <p class="lead text-muted mb-5">Helping students recover their lost identification cards quickly and efficiently.</p>
+                {% endif %}
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-primary">Lost Your ID?</h3>
+                                <p class="card-text text-muted">Search our database to check if your ID has been found and reported.</p>
+                                <a href="{% url 'search-id' %}" class="btn btn-primary btn-lg">Search for My ID</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-success">Report a Lost ID</h3>
+                                <p class="card-text text-muted">If you found an ID, help by reporting it to our system.</p>
+                                <a href="{% url 'report-lost-id' %}" class="btn btn-success btn-lg">Report Lost ID</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                {% if user.is_staff %}
+                <div class="row mt-4">
+                    <div class="col-md-6">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-warning">Found an ID?</h3>
+                                <p class="card-text text-muted">Report a found ID to make it easier for the owner to reclaim it.</p>
+                                <a href="{% url 'add-id' %}" class="btn btn-warning btn-lg">Report Found ID</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="card shadow-lg border-0">
+                            <div class="card-body text-center">
+                                <h3 class="card-title text-info">Admin Dashboard</h3>
+                                <p class="card-text text-muted">Manage reported lost and found IDs.</p>
+                                <a href="{% url 'admin-dashboard' %}" class="btn btn-info btn-lg">View Dashboard</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

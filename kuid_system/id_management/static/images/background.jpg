@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<!-- saved from url=(0024)https://kusoma.ku.ac.ke/ -->
+<html dir="ltr" lang="en" xml:lang="en" class="yui3-js-enabled"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>KU Digital Learning Platform</title>
+    <link rel="shortcut icon" href="https://kusoma.ku.ac.ke/pluginfile.php/1/theme_remui/faviconurl/1725363906/favicon.png">
+    <meta name="apple-itunes-app" content="app-id=633359593, app-argument=https://kusoma.ku.ac.ke/"><link rel="manifest" href="https://kusoma.ku.ac.ke/admin/tool/mobile/mobile.webmanifest.php"><link href="./background_files/css" rel="stylesheet" type="text/css">
+<meta name="keywords" content="moodle, KU Digital Learning Platform">
+<link rel="stylesheet" type="text/css" href="./background_files/combo"><script charset="utf-8" id="yui_3_17_2_1_1743278726894_8" src="./background_files/combo(1)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1743278726894_19" src="./background_files/combo(2)" async=""></script><script charset="utf-8" id="yui_3_17_2_1_1743278726894_22" src="./background_files/MathJax.js.download" async=""></script><script id="firstthemesheet" type="text/css">/** Required in order to fix style inclusion problems in IE with YUI **/</script><link rel="stylesheet" type="text/css" href="./background_files/styles.php">
+<script>
+//<![CDATA[
+var M = {}; M.yui = {};
+M.pageloadstarttime = new Date();
+M.cfg = {"wwwroot":"https:\/\/kusoma.ku.ac.ke","homeurl":{},"sesskey":"XhOaqUw9R8","sessiontimeout":"7200","sessiontimeoutwarning":1200,"themerev":"1725363906","slasharguments":1,"theme":"remui","iconsystemmodule":"core\/icon_system_fontawesome","jsrev":"1716728507","admin":"admin","svgicons":true,"usertimezone":"Africa\/Nairobi","courseId":1,"courseContextId":2,"contextid":2,"contextInstanceId":1,"langrev":1716728507,"templaterev":"1716728507"};var yui1ConfigFn = function(me) {if(/-skin|reset|fonts|grids|base/.test(me.name)){me.type='css';me.path=me.path.replace(/\.js/,'.css');me.path=me.path.replace(/\/yui2-skin/,'/assets/skins/sam/yui2-skin')}};
+var yui2ConfigFn = function(me) {var parts=me.name.replace(/^moodle-/,'').split('-'),component=parts.shift(),module=parts[0],min='-min';if(/-(skin|core)$/.test(me.name)){parts.pop();me.type='css';min=''}
+if(module){var filename=parts.join('-');me.path=component+'/'+module+'/'+filename+min+'.'+me.type}else{me.path=component+'/'+component+'.'+me.type}};
+YUI_config = {"debug":false,"base":"https:\/\/kusoma.ku.ac.ke\/lib\/yuilib\/3.17.2\/","comboBase":"https:\/\/kusoma.ku.ac.ke\/theme\/yui_combo.php?","combine":true,"filter":null,"insertBefore":"firstthemesheet","groups":{"yui2":{"base":"https:\/\/kusoma.ku.ac.ke\/lib\/yuilib\/2in3\/2.9.0\/build\/","comboBase":"https:\/\/kusoma.ku.ac.ke\/theme\/yui_combo.php?","combine":true,"ext":false,"root":"2in3\/2.9.0\/build\/","patterns":{"yui2-":{"group":"yui2","configFn":yui1ConfigFn}}},"moodle":{"name":"moodle","base":"https:\/\/kusoma.ku.ac.ke\/theme\/yui_combo.php?m\/1716728507\/","combine":true,"comboBase":"https:\/\/kusoma.ku.ac.ke\/theme\/yui_combo.php?","ext":false,"root":"m\/1716728507\/","patterns":{"moodle-":{"group":"moodle","configFn":yui2ConfigFn}},"filter":null,"modules":{"moodle-core-chooserdialogue":{"requires":["base","panel","moodle-core-notification"]},"moodle-core-popuphelp":{"requires":["moodle-core-tooltip"]},"moodle-core-event":{"requires":["event-custom"]},"moodle-core-languninstallconfirm":{"requires":["base","node","moodle-core-notification-confirm","moodle-core-notification-alert"]},"moodle-core-lockscroll":{"requires":["plugin","base-build"]},"moodle-core-formchangechecker":{"requires":["base","event-focus","moodle-core-event"]},"moodle-core-actionmenu":{"requires":["base","event","node-event-simulate"]},"moodle-core-tooltip":{"requires":["base","node","io-base","moodle-core-notification-dialogue","json-parse","widget-position","widget-position-align","event-outside","cache-base"]},"moodle-core-dragdrop":{"requires":["base","node","io","dom","dd","event-key","event-focus","moodle-core-notification"]},"moodle-core-handlebars":{"condition":{"trigger":"handlebars","when":"after"}},"moodle-core-maintenancemodetimer":{"requires":["base","node"]},"moodle-core-notification":{"requires":["moodle-core-notification-dialogue","moodle-core-notification-alert","moodle-core-notification-confirm","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-core-notification-dialogue":{"requires":["base","node","panel","escape","event-key","dd-plugin","moodle-core-widget-focusafterclose","moodle-core-lockscroll"]},"moodle-core-notification-alert":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-confirm":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-exception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-notification-ajaxexception":{"requires":["moodle-core-notification-dialogue"]},"moodle-core-blocks":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification"]},"moodle-core_availability-form":{"requires":["base","node","event","event-delegate","panel","moodle-core-notification-dialogue","json"]},"moodle-backup-confirmcancel":{"requires":["node","node-event-simulate","moodle-core-notification-confirm"]},"moodle-backup-backupselectall":{"requires":["node","event","node-event-simulate","anim"]},"moodle-course-categoryexpander":{"requires":["node","event-key"]},"moodle-course-util":{"requires":["node"],"use":["moodle-course-util-base"],"submodules":{"moodle-course-util-base":{},"moodle-course-util-section":{"requires":["node","moodle-course-util-base"]},"moodle-course-util-cm":{"requires":["node","moodle-course-util-base"]}}},"moodle-course-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-course-coursebase","moodle-course-util"]},"moodle-course-management":{"requires":["base","node","io-base","moodle-core-notification-exception","json-parse","dd-constrain","dd-proxy","dd-drop","dd-delegate","node-event-delegate"]},"moodle-form-passwordunmask":{"requires":[]},"moodle-form-dateselector":{"requires":["base","node","overlay","calendar"]},"moodle-form-shortforms":{"requires":["node","base","selector-css3","moodle-core-event"]},"moodle-question-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-question-preview":{"requires":["base","dom","event-delegate","event-key","core_question_engine"]},"moodle-question-searchform":{"requires":["base","node"]},"moodle-availability_completion-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_date-form":{"requires":["base","node","event","io","moodle-core_availability-form"]},"moodle-availability_grade-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_group-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_grouping-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-availability_profile-form":{"requires":["base","node","event","moodle-core_availability-form"]},"moodle-mod_assign-history":{"requires":["node","transition"]},"moodle-mod_attendance-groupfilter":{"requires":["base","node"]},"moodle-mod_customcert-rearrange":{"requires":["dd-delegate","dd-drag"]},"moodle-mod_quiz-dragdrop":{"requires":["base","node","io","dom","dd","dd-scroll","moodle-core-dragdrop","moodle-core-notification","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-base","moodle-mod_quiz-util-page","moodle-mod_quiz-util-slot","moodle-course-util"]},"moodle-mod_quiz-toolboxes":{"requires":["base","node","event","event-key","io","moodle-mod_quiz-quizbase","moodle-mod_quiz-util-slot","moodle-core-notification-ajaxexception"]},"moodle-mod_quiz-quizbase":{"requires":["base","node"]},"moodle-mod_quiz-autosave":{"requires":["base","node","event","event-valuechange","node-event-delegate","io-form"]},"moodle-mod_quiz-modform":{"requires":["base","node","event"]},"moodle-mod_quiz-questionchooser":{"requires":["moodle-core-chooserdialogue","moodle-mod_quiz-util","querystring-parse"]},"moodle-mod_quiz-util":{"requires":["node","moodle-core-actionmenu"],"use":["moodle-mod_quiz-util-base"],"submodules":{"moodle-mod_quiz-util-base":{},"moodle-mod_quiz-util-slot":{"requires":["node","moodle-mod_quiz-util-base"]},"moodle-mod_quiz-util-page":{"requires":["node","moodle-mod_quiz-util-base"]}}},"moodle-message_airnotifier-toolboxes":{"requires":["base","node","io"]},"moodle-block_xp-rulepicker":{"requires":["base","node","handlebars","moodle-core-notification-dialogue"]},"moodle-block_xp-filters":{"requires":["base","node","moodle-core-dragdrop","moodle-core-notification-confirm","moodle-block_xp-rulepicker"]},"moodle-block_xp-notification":{"requires":["base","node","handlebars","button-plugin","moodle-core-notification-dialogue"]},"moodle-filter_glossary-autolinker":{"requires":["base","node","io-base","json-parse","event-delegate","overlay","moodle-core-event","moodle-core-notification-alert","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-filter_mathjaxloader-loader":{"requires":["moodle-core-event"]},"moodle-editor_atto-rangy":{"requires":[]},"moodle-editor_atto-editor":{"requires":["node","transition","io","overlay","escape","event","event-simulate","event-custom","node-event-html5","node-event-simulate","yui-throttle","moodle-core-notification-dialogue","moodle-core-notification-confirm","moodle-editor_atto-rangy","handlebars","timers","querystring-stringify"]},"moodle-editor_atto-plugin":{"requires":["node","base","escape","event","event-outside","handlebars","event-custom","timers","moodle-editor_atto-menu"]},"moodle-editor_atto-menu":{"requires":["moodle-core-notification-dialogue","node","event","event-custom"]},"moodle-report_eventlist-eventfilter":{"requires":["base","event","node","node-event-delegate","datatable","autocomplete","autocomplete-filters"]},"moodle-report_loglive-fetchlogs":{"requires":["base","event","node","io","node-event-delegate"]},"moodle-gradereport_history-userselector":{"requires":["escape","event-delegate","event-key","handlebars","io-base","json-parse","moodle-core-notification-dialogue"]},"moodle-qbank_editquestion-chooser":{"requires":["moodle-core-chooserdialogue"]},"moodle-tool_capability-search":{"requires":["base","node"]},"moodle-tool_lp-dragdrop-reorder":{"requires":["moodle-core-dragdrop"]},"moodle-tool_monitor-dropdown":{"requires":["base","event","node"]},"moodle-assignfeedback_editpdf-editor":{"requires":["base","event","node","io","graphics","json","event-move","event-resize","transition","querystring-stringify-simple","moodle-core-notification-dialog","moodle-core-notification-alert","moodle-core-notification-warning","moodle-core-notification-exception","moodle-core-notification-ajaxexception"]},"moodle-atto_accessibilitychecker-button":{"requires":["color-base","moodle-editor_atto-plugin"]},"moodle-atto_accessibilityhelper-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_align-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_bold-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_charmap-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_clear-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_collapse-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emojipicker-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_emoticon-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_equation-button":{"requires":["moodle-editor_atto-plugin","moodle-core-event","io","event-valuechange","tabview","array-extras"]},"moodle-atto_h5p-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_html-button":{"requires":["promise","moodle-editor_atto-plugin","moodle-atto_html-beautify","moodle-atto_html-codemirror","event-valuechange"]},"moodle-atto_html-beautify":{},"moodle-atto_html-codemirror":{"requires":["moodle-atto_html-codemirror-skin"]},"moodle-atto_image-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_indent-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_italic-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_link-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_managefiles-usedfiles":{"requires":["node","escape"]},"moodle-atto_managefiles-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_media-button":{"requires":["moodle-editor_atto-plugin","moodle-form-shortforms"]},"moodle-atto_noautolink-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_orderedlist-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_recordrtc-button":{"requires":["moodle-editor_atto-plugin","moodle-atto_recordrtc-recording"]},"moodle-atto_recordrtc-recording":{"requires":["moodle-atto_recordrtc-button"]},"moodle-atto_rtl-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_strike-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_subscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_superscript-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_table-button":{"requires":["moodle-editor_atto-plugin","moodle-editor_atto-menu","event","event-valuechange"]},"moodle-atto_title-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_underline-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_undo-button":{"requires":["moodle-editor_atto-plugin"]},"moodle-atto_unorderedlist-button":{"requires":["moodle-editor_atto-plugin"]}}},"gallery":{"name":"gallery","base":"https:\/\/kusoma.ku.ac.ke\/lib\/yuilib\/gallery\/","combine":true,"comboBase":"https:\/\/kusoma.ku.ac.ke\/theme\/yui_combo.php?","ext":false,"root":"gallery\/1716728507\/","patterns":{"gallery-":{"group":"gallery"}}}},"modules":{"core_filepicker":{"name":"core_filepicker","fullpath":"https:\/\/kusoma.ku.ac.ke\/lib\/javascript.php\/1716728507\/repository\/filepicker.js","requires":["base","node","node-event-simulate","json","async-queue","io-base","io-upload-iframe","io-form","yui2-treeview","panel","cookie","datatable","datatable-sort","resize-plugin","dd-plugin","escape","moodle-core_filepicker","moodle-core-notification-dialogue"]},"core_comment":{"name":"core_comment","fullpath":"https:\/\/kusoma.ku.ac.ke\/lib\/javascript.php\/1716728507\/comment\/comment.js","requires":["base","io-base","node","json","yui2-animation","overlay","escape"]},"mathjax":{"name":"mathjax","fullpath":"https:\/\/cdn.jsdelivr.net\/npm\/mathjax@2.7.9\/MathJax.js?delayStartupUntil=configured"}}};
+M.yui.loader = {modules: {}};
+
+//]]>
+</script>
+<meta name="description" content="Transforming Higher Education...Enhancing Lives">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+            @import "https://fonts.googleapis.com/css?family=Inter:100,200,300,400,500,600,700,800,900";
+    </style>
+<script type="text/x-mathjax-config;executed=true">
+MathJax.Hub.Config({
+    config: ["Accessible.js", "Safe.js"],
+    errorSettings: { message: ["!"] },
+    skipStartupTypeset: true,
+    messageStyle: "none"
+});
+</script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core/first" src="./background_files/requirejs.php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="core_form/events" src="./background_files/requirejs(1).php"></script><script type="text/javascript" charset="utf-8" async="" data-requirecontext="_" data-requiremodule="jquery" src="./background_files/javascript.php"></script><style type="text/css">.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
+.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
+.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+</style><style type="text/css">#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_About.MathJax_MousePost {outline: none}
+.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+.MathJax_MenuItem {padding: 2px 2em; background: transparent}
+.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
+.MathJax_MenuActive .MathJax_MenuArrow {color: white}
+.MathJax_MenuArrow.RTL {left: .5em; right: auto}
+.MathJax_MenuCheck {position: absolute; left: .7em}
+.MathJax_MenuCheck.RTL {right: .7em; left: auto}
+.MathJax_MenuRadioCheck {position: absolute; left: 1em}
+.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
+.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
+.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
+.MathJax_MenuDisabled {color: GrayText}
+.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
+.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
+.MathJax_ContextMenu:focus {outline: none}
+.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
+#MathJax_AboutClose {top: .2em; right: .2em}
+.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
+.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
+.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
+.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
+.MathJax_MenuClose:hover span {background-color: #CCC!important}
+.MathJax_MenuClose:hover:focus {outline: none}
+</style><style type="text/css">.MathJax_Preview .MJXf-math {color: inherit!important}
+</style><style type="text/css">.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+</style><style type="text/css">#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
+#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
+#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+</style><style type="text/css">.MathJax_Preview {color: #888; display: contents}
+#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
+#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
+.MathJax_Error {color: #CC0000; font-style: italic}
+</style><style type="text/css">.MJXp-script {font-size: .8em}
+.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
+.MJXp-bold {font-weight: bold}
+.MJXp-italic {font-style: italic}
+.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
+.MJXp-largeop {font-size: 150%}
+.MJXp-largeop.MJXp-int {vertical-align: -.2em}
+.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
+.MJXp-display {display: block; text-align: center; margin: 1em 0}
+.MJXp-math span {display: inline-block}
+.MJXp-box {display: block!important; text-align: center}
+.MJXp-box:after {content: " "}
+.MJXp-rule {display: block!important; margin-top: .1em}
+.MJXp-char {display: block!important}
+.MJXp-mo {margin: 0 .15em}
+.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
+.MJXp-denom {display: inline-table!important; width: 100%}
+.MJXp-denom > * {display: table-row!important}
+.MJXp-surd {vertical-align: top}
+.MJXp-surd > * {display: block!important}
+.MJXp-script-box > *  {display: table!important; height: 50%}
+.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
+.MJXp-script-box > *:last-child > * {vertical-align: bottom}
+.MJXp-script-box > * > * > * {display: block!important}
+.MJXp-mphantom {visibility: hidden}
+.MJXp-munderover, .MJXp-munder {display: inline-table!important}
+.MJXp-over {display: inline-block!important; text-align: center}
+.MJXp-over > * {display: block!important}
+.MJXp-munderover > *, .MJXp-munder > * {display: table-row!important}
+.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
+.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
+.MJXp-mtr {display: table-row!important}
+.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
+.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-mlabeledtr {display: table-row!important}
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
+.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
+.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
+.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
+.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
+.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
+.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
+.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
+.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
+.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
+.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
+.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
+.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+</style></head>
+
+<body id="page-site-index" class="latest-frontpage full-sidebar format-site course path-site chrome dir-ltr lang-en yui-skin-sam yui3-skin-sam kusoma-ku-ac-ke pagelayout-frontpage course-1 context-2 notloggedin uses-drawers  jsenabled"><div id="MathJax_Message" style="display: none;"></div>
+<div class="toast-wrapper mx-auto py-0 fixed-top" role="status" aria-live="polite"></div>
+<div id="page-wrapper" class="d-print-block">
+
+    <div>
+    <a class="sr-only sr-only-focusable" href="https://kusoma.ku.ac.ke/#maincontent">Skip to main content</a>
+</div><script src="./background_files/javascript(1).php"></script>
+<script src="./background_files/combo(3)"></script><script src="./background_files/javascript(2).php"></script>
+<script>
+//<![CDATA[
+document.body.className += ' jsenabled';
+//]]>
+</script>
+
+
+
+    
+
+    <nav class="navbar fixed-top navbar-expand left" aria-label="Site navigation">
+    
+        <a href="https://kusoma.ku.ac.ke/" class="navbar-brand d-none d-md-flex align-items-center m-0 aabtn" aria-label="KUDLP - Brand Name" title="KUDLP">
+    
+                    <img src="./background_files/favicon.png" class="navbar-brand-logo logomini">
+    
+    
+        </a>
+    
+        <div class="sub-nav">
+            <div class="navbar-toggler-wrapper">
+                <button class="navbar-toggler aabtn d-block d-lg-none border-0 h-100 p-0" data-toggler="drawers" data-action="toggle" data-target="theme_remui-drawers-primary">
+                    <span class="edw-icon edw-icon-Mobile-menu"></span>
+                    <span class="sr-only">Side panel</span>
+                </button>
+            </div>
+    
+                <div class="primary-navigation">
+                    <nav class="moremenu navigation observed">
+                        <ul id="moremenu-67e96bfd2ab79-navbar-nav" role="menubar" class="nav more-nav navbar-nav">
+                                    <li data-key="home" class="nav-item" role="none" data-forceintomoremenu="false" title="Home">
+                                                <a role="menuitem" class="nav-link active " href="https://kusoma.ku.ac.ke/" aria-current="true">
+                                                    Home
+                                                </a>
+                                    </li>
+                            <li role="none" class="nav-item dropdown dropdownmoremenu d-none" data-region="morebutton">
+                                <a class="dropdown-toggle nav-link " href="https://kusoma.ku.ac.ke/#" id="moremenu-dropdown-67e96bfd2ab79" role="menuitem" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" tabindex="-1">
+                                    <span class="edw edw-icon-more"></span>
+                                </a>
+                                <ul class="dropdown-menu dropdown-menu-left" data-region="moredropdown" aria-labelledby="moremenu-dropdown-67e96bfd2ab79" role="menu">
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+    
+            <!-- <ul class="navbar-nav d-none d-md-flex my-1 px-1">-->
+            <!-- page_heading_menu -->
+            <!-- -->
+            <!-- </ul> -->
+    
+            <div id="usernavigation" class="navbar-nav ml-auto">
+                
+    
+                <div class="d-flex usermenu-wrapper">
+                    <div class="divider border-left h-75 align-self-center"></div>
+                    <div class="d-flex align-items-stretch usermenu-container" data-region="usermenu">
+                        <div class="usermenu">
+                                <span class="login">
+                        
+                                    <div class="dropdown">
+                                        <a href="https://kusoma.ku.ac.ke/#" role="button" id="user-menu-toggle" data-toggle="dropdown" aria-label="User menu" aria-haspopup="true" aria-controls="user-action-menu" class="nav-link p-0" title="Login User menu">
+                                            <div class="remuiicon">
+                                                <i class="icon fa fa-user"></i>
+                                            </div>
+                                            Log in
+                                        </a>
+                        
+                                        <div class="dropdown-menu dropdown-menu-right loginddown p-p-6" role="menu" data-region="popover-region-container">
+                                            <div class="d-flex flex-column flex-gap-8">
+                                            <form class="login-form" action="https://kusoma.ku.ac.ke/login/index.php" method="post" id="login">
+                                                <input type="hidden" name="logintoken" value="qM0HvwjHs7UiwvBlgpBL6EiDmLdjCkdY">
+                                                <div class="login-form-username form-group">
+                                                    <label for="username" class="sr-only">
+                                                            Username
+                                                    </label>
+                                                    <label class="text-link-semibold " tabindex="-1">
+                                                            Username
+                                                    </label>
+                                                    <input type="text" name="username" id="username" class="form-control form-control-lg" value="" placeholder="Username" autocomplete="username">
+                                                </div>
+                                                <div class="login-form-password form-group">
+                                                    <label for="password" class="sr-only">Password</label>
+                                                    <label class="text-link-semibold form-label-color" tabindex="-1">
+                                                        Password
+                                                    </label>
+                                                    <div class="position-relative password-field-eye">
+                                                        <input type="password" name="password" id="password" value="" class="form-control form-control-lg" placeholder="Password" autocomplete="current-password">
+                                                        <span class="edw-icon edw-icon-Show show-password-icon"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="login-form-forgotpassword form-group text-right small-info-semibold">
+                                                    <a href="https://kusoma.ku.ac.ke/login/forgot_password.php">Forgot your password?</a>
+                                                </div>
+                                                <div class="login-form-submit form-group">
+                                                    <button class="btn btn-primary btn-lg btn-block" type="submit" id="loginbtn">Log in</button>
+                                                </div>
+                                            </form>
+                                            <div class="login-identityproviders d-flex flex-column flex-gap-6">
+                                            <h2 class="login-heading text-align-middle h-semibold-6 m-0">Or login using your account</h2>
+                        
+                                            <div class="login-identityprovider-btn-wrapper d-flex flex-gap-6 justify-content-center">
+                                                <a class="login-identityprovider-btn border-0" href="https://kusoma.ku.ac.ke/auth/oauth2/login.php?id=3&amp;wantsurl=https%3A%2F%2Fkusoma.ku.ac.ke%2F&amp;sesskey=XhOaqUw9R8" title="Login with Corporate Email">
+                                                        <img src="./background_files/favicon.ico" alt="" width="24" height="24" loading="lazy">
+                                                </a>
+                                            </div>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </span>
+                        </div>
+                    </div>
+                </div>
+    
+                
+            </div>
+        </div>
+    
+    </nav>
+    
+
+<div class="drawer drawer-left drawer-primary d-print-none" data-region="fixed-drawer" id="theme_remui-drawers-primary" data-preference="" data-state="show-drawer-primary" data-forceopen="0" data-close-on-resize="1" aria-hidden="true">
+    <div class="drawerheader">
+        <a href="https://kusoma.ku.ac.ke/" class="navbar-brand align-items-center m-0 aabtn" aria-label="KUDLP - Brand Name" title="KUDLP" data-aria-hidden-tab-index="" tabindex="-1">
+
+                    <img src="./background_files/favicon.png" class="navbar-brand-logo logomini">
+
+
+        </a>
+        <button class="btn drawertoggle icon-no-margin hidden d-flex" data-toggler="drawers" data-action="closedrawer" data-target="theme_remui-drawers-primary" data-toggle="tooltip" data-placement="right" title="Close drawer" data-aria-hidden-tab-index="" tabindex="-1">
+            <span class="edw-icon edw-icon-Cancel"></span>
+        </button>
+    </div>
+    <div class="drawercontent drag-container" data-usertour="scroller">
+                <div class="list-group">
+                <a href="https://kusoma.ku.ac.ke/" class="list-group-item list-group-item-action active  home" aria-current="true" data-aria-hidden-tab-index="" tabindex="-1">
+                    Home
+                </a>
+        </div>
+
+    </div>
+</div>
+
+    <div id="page" data-region="mainpage" data-usertour="scroller" class="drawers   drag-container">
+        <div id="topofscroll" class="main-inner">
+            
+            
+                <style>
+.sections-loader-wrapper {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    opacity: 0;
+    transition: opacity 300ms linear;
+    z-index: 1701;
+}
+.sections-loader-wrapper.show {
+    opacity: 1;
+}
+.section-loader-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.7);
+    z-index: 3;
+}
+.sections-loader-wrapper .sections-loader, .section-loader-wrapper .section-loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.sections-loader-wrapper .sections-loader img, .section-loader-wrapper .section-loader img {
+    height: auto;
+    width:  140px;
+    max-width: 140px;
+}
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .navbar-options #toggleFullscreen svg,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .navbar-options .menu-toggle .fa,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .navbar-brand-logo i,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .nav-link,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .navbar-brand-logo i,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .nav-link,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .icon,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .dropdown-toggle {
+    color: #ffffff !important;
+}
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .navbar-container .hamburger .hamburger-bar,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .navbar-container .hamburger:after,
+body#page-site-index.latest-frontpage.animate-header:not(.drawer-open-left) .fixed-top.navbar .navbar-container .hamburger:before {
+    background: #ffffff;
+}
+</style>
+<div class="sections-loader-wrapper" style="display: none;">
+    <div class="sections-loader">
+        <img class="icon" src="./background_files/6279ce4af4acbcbffd9a7023eeec9675.gif">
+    </div>
+</div>
+
+<div class="home-sections " id="yui_3_17_2_1_1743278726894_24">
+<section data-instance="1" data-sectionname="html" class="panel section-html m-0 px-sm-0 animation-slide-left" id="yui_3_17_2_1_1743278726894_37">
+
+    <div class="html-blocks row m-0" id="yui_3_17_2_1_1743278726894_62">
+        <div class="html-block p-0 col-12 " id="yui_3_17_2_1_1743278726894_61">
+            <style type="text/css">.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner {
+  background-image: url("https://kusoma.ku.ac.ke/themeimg/1.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-col-left img {
+  display: none;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-col-right {
+  background-color: rgba(14, 54, 146, 0.7);
+  position: relative;
+  padding: 0px;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-col-right .inner {
+  padding: 0% 25% 1% 25%;
+  display: table-cell;
+  vertical-align: middle;
+  min-height: 620px;
+  height: 620px;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-title {
+  color: #FFFFFF;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 60px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 60px;
+  margin-bottom: 10px;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-tagline {
+  color: #F3FA00;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: 20px;
+  margin-bottom: 40px;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-btn {
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+  fill: #0E3692;
+  color: #0E3692;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  padding: 16px 60px 15px 60px;
+  line-height: 50px;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-btn:hover {
+  color: #F3FA00;
+  background-color: #0E3692;
+  text-decoration: none;
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-down-arrow {
+  background-color: #FFFFFF;
+  font-size: 19px;
+  font-size: 24px;
+  line-height: 35px;
+  border-radius: 50%;
+  height: 38px;
+  width: 38px;
+  display: block;
+  position: absolute;
+  left: -18px;
+  bottom: 160px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-down-arrow .fa {
+  color: #054473 !important;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+@media (max-width: 767px) {
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner {
+    margin-bottom: 80px;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-col-left {
+    padding: 0px !important;
+    margin: 0px !important;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-col-left img {
+    display: block;
+    width: 100%;
+    height: auto;
+    min-height: 260px;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-col-right .inner {
+    padding: 35px 35px 40px 35px !important;
+    min-height: none;
+    min-height: auto;
+    height: auto;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-title {
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-tagline {
+    font-size: 20px;
+    line-height: 30px;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-btn {
+    margin: 0px auto;
+    width: 280px;
+    display: block;
+    line-height: inherit;
+  }
+  .home-sections [data-instance="1"] .html-blocks .html-block:nth-child(1) .wd-banner .wd-bnr-down-arrow {
+    left: calc(50% - 19px);
+    bottom: -19px;
+  }
+}
+</style>
+            <div class="cotainer-fluid wd-banner" id="yui_3_17_2_1_1743278726894_60">
+<div class="row" id="yui_3_17_2_1_1743278726894_59">
+<div class="col-md-6 wd-bnr-col-left" id="yui_3_17_2_1_1743278726894_58">&nbsp;<img src="./background_files/1(1).jpg" alt="" width="1920" height="1280"></div>
+<div class="col-md-6 wd-bnr-col-right">&nbsp;
+<div id="yui_3_17_2_1_1693532356573_1969" class="inner">
+<h1 id="yui_3_17_2_1_1693532356573_1968" class="wd-bnr-title">Digital Learning Platform</h1>
+<p id="yui_3_17_2_1_1693532356573_1997" class="wd-bnr-tagline">Learn from anywhere, anytime, at your own schedule and pace</p>
+<a id="yui_3_17_2_1_1693532356573_1998" class="wd-bnr-btn" href="https://www.ku.ac.ke/" target="_blank">University Website</a></div>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+
+</section><section data-instance="8" data-sectionname="html" class="panel invisible section-html m-0 px-sm-0 " id="yui_3_17_2_1_1743278726894_43">
+
+    <div class="html-blocks row m-0">
+        <div class="html-block p-0 col-12 ">
+            <style type="text/css">.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts {
+  padding: 40px;
+  width: 100%;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-inner {
+  margin: 0 0 0 0;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-block-inner {
+  width: 100%;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-title {
+  color: #054473;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 54px;
+  padding-bottom: 35px;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-text {
+  color: #777777;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-img img {
+  width: 100%;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-events-box {
+  max-width: 1050px;
+  margin: 0px auto;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-pane {
+  display: flex;
+  padding: 10px;
+  transition: 0.5s;
+  margin-bottom: 20px;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-pane:hover {
+  #background-color: #054473;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-date {
+  background-color: #054473;
+  padding: 10px;
+  color: #FFFFFF;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  width: 18%;
+  text-align: center;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-cont {
+  padding: 0px 15px;
+  width: 82%;
+  text-align: center;
+  display: block;
+  position: relative;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-title {
+  width: 100%;
+  display: block;
+  text-align: left;
+  float: left;
+  color: #222222;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 28px;
+  padding-bottom: 5px;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-place {
+  width: 50%;
+  display: block;
+  text-align: left;
+  float: left;
+  color: #777777;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-time {
+  width: 50%;
+  display: block;
+  text-align: left;
+  float: left;
+  color: #777777;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding-bottom: 5px;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-more {
+  width: 100%;
+  display: block;
+  text-align: left;
+  float: left;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #054473;
+  text-decoration: none;
+}
+.home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-more a {
+  color: #054473;
+  text-decoration: none;
+}
+@media (max-width: 767px) {
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts {
+    padding: 60px 0;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-block {
+    padding: 20px;
+    order: 2;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-img {
+    padding: 20px;
+    order: 1;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-title {
+    font-size: 36px;
+    line-height: 44px;
+    padding-bottom: 0px;
+    margin-bottom: 16px;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-pane {
+    display: inline-block;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-evnts-text {
+    font-size: 22px;
+    line-height: 32px;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-date {
+    width: 100%;
+    min-width: 100%;
+    padding: 28px 0;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    line-height: 24px;
+  }
+  .home-sections [data-instance="8"] .html-blocks .html-block:nth-child(1) .wd-event-cont {
+    width: 100%;
+    padding: 0;
+  }
+}
+</style>
+            <div class="container wd-evnts">
+<div class="row wd-evnts-inner">
+<div class="col-md-6 wd-evnts-block">
+<div class="wd-evnts-block-inner">
+<h4 class="wd-evnts-title">Upcoming events</h4>
+<p class="wd-evnts-text">List of all upcoming events</p>
+</div>
+</div>
+<div class="col-md-6 wd-evnts-img">&nbsp;</div>
+</div>
+<div class="row wd-events-box">
+<div class="col-md-6 wd-event-pane">
+<div class="wd-event-date">8th FEB 2025</div>
+<div class="wd-event-cont">
+<div class="wd-event-title">2<sup>nd</sup> DSVOL and CEP Orientation Feb 2025</div>
+<div class="wd-event-place"><strong>Place:</strong> Online</div>
+<div class="wd-event-time"><strong>Time: 8AM to 4PM</strong></div>
+<div class="wd-event-more"><span style="color: #800000;"><a href="https://drive.google.com/file/d/1UafbJtGrKaD8koLdT8DdZWVeBcg_-Cln/view?usp=sharing" target="_blank">Second Orientation Recording</a></span></div>
+</div>
+</div>
+<div class="col-md-6 wd-event-pane">
+<div class="wd-event-date">
+<div class="wd-event-date">18th JAN 2025</div>
+</div>
+<div class="wd-event-cont">
+<div class="wd-event-title">1<sup>st</sup> DSVOL and CEP Orientation Jan 2025</div>
+<div class="wd-event-place"><strong>Place:</strong> Online</div>
+<div class="wd-event-time"><strong>Time: 8AM to 4PM</strong></div>
+<div class="wd-event-more"><a title="Recording" href="https://drive.google.com/file/d/1zmRLV543MGVxll49aMqrEHmmPwjV8QQB/view?usp=sharing" target="_blank">First Orientation Recording</a><span style="color: #800000;"><br></span></div>
+</div>
+</div>
+<div class="col-md-6 wd-event-pane">
+<div class="wd-event-date">6th Jan 2025</div>
+<div class="wd-event-cont">
+<div class="wd-event-title">New Academic Year Commences</div>
+<div class="wd-event-place"><strong>Place:</strong> All campuses</div>
+<div class="wd-event-time"><strong>Time:</strong></div>
+<div class="wd-event-more"><a href="https://kusoma.ku.ac.ke/#">READ MORE</a></div>
+</div>
+</div>
+<div class="col-md-6 wd-event-pane">
+<div class="wd-event-date">2024 / 2025</div>
+<div class="wd-event-cont">
+<div class="wd-event-title">Students Catalogue</div>
+<div class="wd-event-place"><strong>Download:</strong> <a href="https://docs.google.com/document/d/1xU-_grnP_FpvedEy1NVBX5Y4kdh3yAvS/edit?usp=sharing&amp;ouid=117091281529629172358&amp;rtpof=true&amp;sd=true" target="_blank">Click here to download the catalogue</a></div>
+<div class="wd-event-time"><strong>period:</strong> First trimester 2023/2024</div>
+<div class="wd-event-more"><a href="https://www.ku.ac.ke/dsvol/component/k2/item/521-vol-trimester-two-2022-2023-catalogues-a-b" target="_blank">READ MORE</a></div>
+</div>
+</div>
+<div class="col-md-6 wd-event-pane">
+<div class="wd-event-date">Nov. 2023</div>
+<div class="wd-event-cont">
+<div class="wd-event-title">All Semester Examinations Commence</div>
+<div class="wd-event-place"><strong>Place:</strong> Main campus</div>
+<div class="wd-event-time"><strong>Time:</strong></div>
+<div class="wd-event-more"><a href="https://kusoma.ku.ac.ke/#">READ MORE</a></div>
+</div>
+</div>
+</div>
+</div>
+<script id="leather-provider" type="text/javascript" src="chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js"></script>
+<script id="leather-provider" type="text/javascript" src="chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js"></script>
+<script id="leather-provider" type="text/javascript" src="chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js"></script>
+<script id="leather-provider" type="text/javascript" src="chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js"></script>
+<script id="leather-provider" type="text/javascript" src="chrome-extension://ldinpeekobnhjjdofggfgjlcehhmanlj/inpage.js"></script>
+        </div>
+    </div>
+
+</section><section data-instance="4" data-sectionname="html" class="panel invisible section-html m-0 px-sm-0 " id="yui_3_17_2_1_1743278726894_51">
+
+    <div class="html-blocks row m-0">
+        <div class="html-block p-0 col-12 ">
+            <style type="text/css">.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp {
+  border-top: solid 1px #E5E5E5;
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-title {
+  color: #054473;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 54px;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-pane {
+  min-height: 270px;
+  background-size: cover;
+  background-position: top center;
+  display: table;
+  background-color: #054473;
+  padding: 0px;
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-text {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #FFFFFF;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 26px;
+  background-color: rgba(0, 0, 0, 0.4);
+  transition: 0.9s;
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-text:hover {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-1 {
+  padding: 30px 70px 30px 70px;
+  background-color: #FFFFFF;
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-2 {
+  background-image: url("https://kusoma.ku.ac.ke/themeimg/career.jpg");
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-3 {
+  background-image: url("https://kusoma.ku.ac.ke/themeimg/wellness.jpg");
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-4 {
+  background-image: url("https://kusoma.ku.ac.ke/themeimg/sports.jpg");
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-5 {
+  background-image: url("https://eluminedemo.wisdmlabs.com/corporate-training/wp-content/uploads/sites/10/2021/01/public-safety.png");
+}
+.home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-6 {
+  background-image: url("https://kusoma.ku.ac.ke/themeimg/3.jpg");
+}
+@media (max-width: 767px) {
+  .home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-title {
+    font-size: 36px;
+    line-height: 40px;
+    text-align: left;
+  }
+  .home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-block-1 {
+    padding: 69px 35px 69px 35px;
+  }
+  .home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-pane {
+    min-height: 235px;
+  }
+  .home-sections [data-instance="4"] .html-blocks .html-block:nth-child(1) .wd-camp-text {
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
+</style>
+            <div class="conrainer-fluid wd-camp">
+<div class="row">
+<div class="col-md-4 wd-camp-pane wd-camp-block-1">
+<h3 class="wd-camp-title">Campus life at Kenyatta University</h3>
+</div>
+<div class="col-md-4 wd-camp-pane wd-camp-block-2">
+<h4 id="yui_3_17_2_1_1693551991729_3321" class="wd-camp-text">career development &amp; Mentorship</h4>
+</div>
+<div class="col-md-4 wd-camp-pane wd-camp-block-3">
+<h4 class="wd-camp-text">WELLNESS &amp; Rehabilitation</h4>
+</div>
+<div class="col-md-4 wd-camp-pane wd-camp-block-4">
+<h4 class="wd-camp-text">Sports and Entertainment</h4>
+</div>
+<div class="col-md-4 wd-camp-pane wd-camp-block-5">
+<h4 class="wd-camp-text">Information communication technology</h4>
+</div>
+<div class="col-md-4 wd-camp-pane wd-camp-block-6">
+<h4 class="wd-camp-text">LIBRARY</h4>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+
+</section><section data-instance="2" data-sectionname="html" class="panel invisible section-html m-0 px-sm-0 " id="yui_3_17_2_1_1743278726894_57">
+
+    <div class="html-blocks row m-0">
+        <div class="html-block p-0 col-12 ">
+            <style type="text/css">.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-degree {
+  background-color: #00B9F2;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-title {
+  color: #FFFFFF;
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 46px;
+  font-weight: 900;
+  line-height: 60px;
+  display: table-cell;
+  vertical-align: middle;
+  height: 100%;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-first {
+  background-color: transparent;
+  margin: 0px 0px 0px 0px;
+  padding: 0px 57px 0px 57px;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-first .inner {
+  min-height: 380px;
+  height: 100%;
+  display: table;
+  text-align: left;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs {
+  padding: 0px;
+  background-color: #FFFFFF;
+  border-bottom: solid 1px #E5E5E5;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs .nav-link {
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #054473;
+  border-bottom: solid 1px #E5E5E5;
+  padding: 20px 25px;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .nav-link-content {
+  font-family: "Red Hat Display", Sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #FFFFFF;
+  border-bottom: solid 1px #E5E5E5;
+  padding: 20px 25px;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs .nav-link.active {
+  color: #000000;
+  font-weight: 900;
+  background: #F3F3F3;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-top-width: 0px !important;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs-content {
+  padding: 0px;
+}
+.home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs-content .tab-pane img {
+  width: 100%;
+}
+@media (max-width: 767px) {
+  .home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-first {
+    order: 1;
+    padding: 45px 35px 45px 35px;
+  }
+  .home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-first .inner {
+    min-height: auto;
+    height: auto;
+  }
+  .home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-title {
+    font-size: 40px;
+    line-height: 44px;
+  }
+  .home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs .nav-link {
+    font-size: 20px;
+    line-height: 38px;
+    padding-left: 43px;
+    padding-right: 43px;
+  }
+  .home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs {
+    order: 3;
+  }
+  .home-sections [data-instance="2"] .html-blocks .html-block:nth-child(1) .wd-dgr-tabs-content {
+    order: 2;
+    padding: 0px;
+  }
+}
+</style>
+            <div id="wd-degree" class="wd-degree">
+<div class="row">
+<div class="col-md-4 wd-dgr-first">
+<div class="inner align-middle">
+<h2 class="wd-dgr-title">Kenyatta University Schools Serviced by DSVOL</h2>
+</div>
+</div>
+<div class="col-md-4 wd-dgr-tabs">
+<div id="v-wd-tab" class="nav flex-column nav-wd"><a id="v-wd-1-tab" class="nav-link active" tabindex="0" href="https://kusoma.ku.ac.ke/#v-wd-1" data-toggle="pill">Digital School of Virtual &amp; Open Learning</a> <a id="v-wd-2-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-2" data-toggle="pill">Education &amp; Life Long Learning</a> <a id="v-wd-3-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-3" data-toggle="pill">Business, Economics and Tourism</a> <a id="v-wd-4-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-4" data-toggle="pill">Engineering and Architecture</a> <a id="v-wd-5-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-5" data-toggle="pill">Law, Arts and Social Sciences</a> <a id="v-wd-6-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-6" data-toggle="pill">Health Sciences</a> <a id="v-wd-7-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-7" data-toggle="pill">Pure and Applied Sciences</a> <a id="v-wd-8-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-8" data-toggle="pill">Agricultural &amp; Environmental Sciences</a> <a id="v-wd-9-tab" class="nav-link" tabindex="-1" href="https://kusoma.ku.ac.ke/#v-wd-9" data-toggle="pill">Graduate School</a></div>
+</div>
+<div class="col-md-4 wd-dgr-tabs-content">
+<div id="v-wd-tabContent" class="tab-content">
+<div id="v-wd-1" class="tab-pane fade show active"><img src="./background_files/lib.jpg" alt="Modern Library">
+<p class="nav-link-content"><a href="https://www.ku.ac.ke/dsvol/" target="_blank">Digital Sch of Virtual &amp; Open Learning</a></p>
+<p>The creation of the Digital School of Virtual and Open Learning on 30th June 2014 was borne out of the University’s cogent desire to leverage technology enabled learning with a view to enhancing access to University education through Open and Distance Learning. Indeed today, technology enabled open and distance learning has become an integral component of mainstream systems in both the developed and developing countries. It has facilitated and opened up University education space to thousands of students who might otherwise miss out on access to higher education. Through the use of mobile technologies to promote technology enabled learning the Digital School has ensured that learning moves out of the classroom into the learner’s environment both real and virtual. Learners are able to learn from anywhere, anytime at their own schedule and pace.</p>
+</div>
+<div id="v-wd-2" class="tab-pane fade"><img src="./background_files/edu.jpg" alt="img">
+<p class="nav-link-content"><a href="https://education.ku.ac.ke/" target="_blank">School of Education</a></p>
+<p>Welcome to Kenyatta University School of Education and Lifelong Learning. our vision is to be a globally competitive hub in the preparation of professional educationalists, mentors and researchers for enhancement of the welfare of humanity. The School has continuously grown from a University College since the 1970s and it is the largest School with an enrolment of more than 30,000 (thirty thousand) registered students in various education programmes. This enrollment forms 40/% of the University’s student population. The School attracts a sizeable proportion of students from outside Kenya, in the African Region and beyond.</p>
+</div>
+<div id="v-wd-3" class="tab-pane fade"><img src="./background_files/bet.jpg" alt="img">
+<p class="nav-link-content">Business, Economics and Tourism</p>
+<p>The School of Business, Economics &amp; Tourism was established in September 2022 bringing together the former School of Business, School of Economics and School of Hospitality, Tourism, and Leisure Studies.</p>
+</div>
+<div id="v-wd-4" class="tab-pane fade"><img src="./background_files/enga.jpg" alt="img">
+<p class="nav-link-content"><a href="https://engineering.ku.ac.ke/" target="_blank">Engineering and Architecture</a></p>
+<p>The history of the School of Engineering and Technology has its roots in the Appropriate Technology Centre (ATC), which was created in the early 1980’s to demonstrate the application of physics in solving day-to-day problems in the rural and urban areas of Kenya using locally available resources. The centre was later upgraded and became a Department of Appropriate Technology (DAT) between 1985-2002. Currently the school houses six departments</p>
+</div>
+<div id="v-wd-5" class="tab-pane fade"><img src="./background_files/law.jpg" alt="img">
+<p class="nav-link-content"><a href="https://law.ku.ac.ke/" target="_blank">Law, Arts and Social Sciences</a></p>
+<p>The idea of setting up a law school in Kenyatta University was conceived as early as the year 2006 by the School of Humanities and Social Sciences, which conducted the necessary ground work leading to the establishment of the School of Law. During the setting up Kenyatta University School of Law (KUSOL), consideration was given to the ever increasing demand for legal professionals not only in Kenya but globally. Thanks to all the hard work, put in at the beginning by the School of Humanities and Social Sciences, the School of Law is now firmly established, accredited and ISO 9001:2015 Certified.</p>
+</div>
+<div id="v-wd-6" class="tab-pane fade"><img src="./background_files/hs.jpg" alt="img">
+<p class="nav-link-content"><a href="https://medicine.ku.ac.ke/" target="_blank">Health Sciences</a></p>
+<p>The School was established in August 2004 as a Centre of Excellence in Health Research, Capacity Building and Product Development and named School of Health Sciences. Its name was later changed to School of Medicine. It has grown rapidly and has seen the Public Health Component branch off to form the School of Public Health, the Pharmacy component form the School of Pharmacy and the Nursing component the School of Nursing.</p>
+</div>
+<div id="v-wd-7" class="tab-pane fade"><img src="./background_files/spas.jpg" alt="img">
+<p class="nav-link-content"><a href="https://spas.ku.ac.ke/" target="_blank">Pure and Applied Sciences</a></p>
+<p>The mission of the School is to provide high quality education based on modern scientific teaching and research techniques and to produce highly trained scientists in the various disciplines to meet the ever growing challenges of a dynamic world in the pure sciences and to offer practical solutions to problems affecting humanity in applied sciences.</p>
+</div>
+<div id="v-wd-8" class="tab-pane fade"><img src="./background_files/agrenv.jpg" alt="img">
+<p class="nav-link-content">Agricultural and Environmental Sciences</p>
+<p>We are living in the century whereby environmental pressures such as global warming, ozone depletion, pollution, climate change, over exploitation of natural resources, altered land use and loss of biodiversity – coincide with a growing world population that needs food and an acceptable standard of living. The complex nature of these environmental problems can be best understood and addressed through studies that cross traditional academic disciplinary boundaries. This applies to studies of both global-scale processes as well as those that occur at the local level.</p>
+</div>
+<div id="v-wd-9" class="tab-pane fade"><img src="./background_files/graduate.jpg" alt="img">
+<p class="nav-link-content"><a href="https://graduates.ku.ac.ke/" target="_blank">Graduate School</a></p>
+<p>The University Research component analyses societal needs and tailors research topics towards orientation with market demands in the country and region. Coupled with a well informed Intellectual Property (IP) Policy that confers incentives to innovators, Postgraduate work at Kenyatta University is at the cutting edge of knowledge. The University recently inaugurated a centre for Innovations and Incubation which is set to complement the National Strategy for Vision 2030. With well equipped laboratories and several well trained Professors including one of the few laboratories in the country for genetic transformation, Kenyatta University is the best University in the region for postgraduate work. The University has well monitored programmes to ensure timely completion of postgraduate work and a very well planned and certified Quality Assurance Programme.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+
+</section><section data-instance="5" data-sectionname="html" class="panel invisible  section-html m-0 px-sm-0 lazy-section" style="height: 650px;">
+
+</section></div>
+
+
+            <div class="container">
+            <div class="drawer-toggles d-flex">
+            </div>
+            <header id="page-header" class="header-maxwidth d-print-none">
+    <div class="w-100 header-wrapper">
+        <div class="d-flex flex-wrap">
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="dashboard-bar-wrapper">
+                        <div class="page-context-header"><div class="page-header-headings"><h1 class="h2 header-heading">KU Digital Learning Platform</h1></div></div>
+            </div>
+            <div class="header-actions-container " data-region="header-actions-container">
+            </div>
+        </div>
+    </div>
+</header>
+
+
+
+
+<div id="page-content" class="pb-3 d-print-block">
+    <div id="region-main-box">
+        <section id="region-main" aria-label="Content">
+            <span class="notifications" id="user-notifications"></span>
+            <div role="main"><span id="maincontent"></span><br></div>
+            
+            
+
+        </section>
+    </div>
+</div>
+
+
+</div>
+    </div>
+    </div>
+    
+    <footer id="page-footer" class="footer-popover ">
+        <div class="footer-container container">
+            <div class="floating-buttons-wrapper">
+                <button id="gotop" class="btn btn-primary btn-floating d-none" aria-label="Go top" role="button" title="Go top">
+                    <span class="edw-icon edw-icon-UpArrow"></span>
+                </button>
+    
+    
+                <button class="btn btn-primary btn-floating d-none d-md-flex" data-action="footer-popover" aria-label="Show footer" data-region="footer-container-popover" data-original-title="" title="">
+                    <span class="edw-icon edw-icon-Help"></span>
+                </button>
+            </div>
+            <div class="footer-content-popover container" data-region="footer-content-popover">
+                <div class="footer-section ">
+                    <!--
+                    -->
+    
+    
+                        <div class="footer-popover-section-links"><div class="popover-icon-wrapper"><span><i class="icon fa edw-icon edw-icon-Email fa-fw " aria-hidden="true"></i></span></div><a href="https://kusoma.ku.ac.ke/user/contactsitesupport.php">Contact site support</a></div>
+                </div>
+                <div class="footer-section">
+                    <div class="logininfo">
+                        <div class="logininfo">You are not logged in. (<a href="https://kusoma.ku.ac.ke/login/index.php">Log in</a>)</div>
+                    </div>
+                    <div class="tool_usertours-resettourcontainer">
+                    </div>
+    
+                    <div class="tool_dataprivacy"><a href="https://kusoma.ku.ac.ke/admin/tool/dataprivacy/summary.php">Data retention summary</a></div><a href="https://play.google.com/store/apps/details?id=ku.student.portal10">Get the mobile app</a>
+                    <script>
+//<![CDATA[
+var require = {
+    baseUrl : 'https://kusoma.ku.ac.ke/lib/requirejs.php/1716728507/',
+    // We only support AMD modules with an explicit define() statement.
+    enforceDefine: true,
+    skipDataMain: true,
+    waitSeconds : 0,
+
+    paths: {
+        jquery: 'https://kusoma.ku.ac.ke/lib/javascript.php/1716728507/lib/jquery/jquery-3.6.1.min',
+        jqueryui: 'https://kusoma.ku.ac.ke/lib/javascript.php/1716728507/lib/jquery/ui-1.13.2/jquery-ui.min',
+        jqueryprivate: 'https://kusoma.ku.ac.ke/lib/javascript.php/1716728507/lib/requirejs/jquery-private'
+    },
+
+    // Custom jquery config map.
+    map: {
+      // '*' means all modules will get 'jqueryprivate'
+      // for their 'jquery' dependency.
+      '*': { jquery: 'jqueryprivate' },
+      // Stub module for 'process'. This is a workaround for a bug in MathJax (see MDL-60458).
+      '*': { process: 'core/first' },
+
+      // 'jquery-private' wants the real jQuery module
+      // though. If this line was not here, there would
+      // be an unresolvable cyclic dependency.
+      jqueryprivate: { jquery: 'jquery' }
+    }
+};
+
+//]]>
+</script>
+<script src="./background_files/javascript(3).php"></script>
+<script>
+//<![CDATA[
+M.util.js_pending("core/first");
+require(['core/first'], function() {
+require(['core/prefetch'])
+;
+require(["media_videojs/loader"], function(loader) {
+    loader.setUp('en');
+});;
+
+require(['local_remuihomepage/frontpage'], function (FrontPage) {
+    FrontPage.init(1, 0);
+});
+;
+M.util.js_pending('report_allylti/main'); require(['report_allylti/main'], function(amd) {amd.init(); M.util.js_complete('report_allylti/main');});;
+
+    require(['core/moremenu'], function(moremenu) {
+        moremenu(document.querySelector('#moremenu-67e96bfd2ab79-navbar-nav'));
+    });
+;
+
+    require(['core/usermenu'], function(UserMenu) {
+        UserMenu.init();
+    });
+;
+
+require(['theme_remui/drawers']);
+;
+
+require(['theme_remui/footer-popover'], function(FooterPopover) {
+    FooterPopover.init();
+});
+
+
+
+;
+
+M.util.js_pending('theme_remui/loader');
+require(['theme_remui/loader', 'theme_remui/drawer'], function(Loader, Drawer) {
+    Drawer.init();
+    M.util.js_complete('theme_remui/loader');
+});
+;
+
+require(['theme_remui/dictionary'], function(dictionary) {
+    dictionary.init();
+});
+;
+
+require(['jquery', 'theme_remui/slick'], function ($) {
+$(document).ready(function(){
+    $('.slick-slide-container').slick({
+        dots: false,
+        arrows: true,
+        infinite: false,
+        speed: 500,
+        prevArrow: $(".available-courses.button-container .btn-prev"),
+        nextArrow: $(".available-courses.button-container .btn-next"),
+        rtl: ($("html").attr("dir") == "rtl") ? true : false,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        responsive: [{
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3
+            }
+          }, {
+            breakpoint: 820,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          }, {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      })
+      .on('setPosition', function (event, slick) {
+        slick.$slides.css('height', slick.$slideTrack.height() + 'px');
+        $('.slick-slide > div').css('height', '100%');
+      });
+      $('.slick-slide-container.slick-slider.d-none').removeClass('d-none');
+});
+});
+;
+M.util.js_pending('core/notification'); require(['core/notification'], function(amd) {amd.init(2, []); M.util.js_complete('core/notification');});;
+M.util.js_pending('core/log'); require(['core/log'], function(amd) {amd.setConfig({"level":"warn"}); M.util.js_complete('core/log');});;
+M.util.js_pending('core/page_global'); require(['core/page_global'], function(amd) {amd.init(); M.util.js_complete('core/page_global');});;
+M.util.js_pending('core/utility'); require(['core/utility'], function(amd) {M.util.js_complete('core/utility');});
+    M.util.js_complete("core/first");
+});
+//]]>
+</script>
+<script>
+//<![CDATA[
+M.str = {"moodle":{"lastmodified":"Last modified","name":"Name","error":"Error","info":"Information","yes":"Yes","no":"No","success":"Success","cancel":"Cancel","confirm":"Confirm","areyousure":"Are you sure?","closebuttontitle":"Close","unknownerror":"Unknown error","file":"File","url":"URL","collapseall":"Collapse all","expandall":"Expand all"},"repository":{"type":"Type","size":"Size","invalidjson":"Invalid JSON string","nofilesattached":"No files attached","filepicker":"File picker","logout":"Logout","nofilesavailable":"No files available","norepositoriesavailable":"Sorry, none of your current repositories can return files in the required format.","fileexistsdialogheader":"File exists","fileexistsdialog_editor":"A file with that name has already been attached to the text you are editing.","fileexistsdialog_filemanager":"A file with that name has already been attached","renameto":"Rename to \"{$a}\"","referencesexist":"There are {$a} links to this file","select":"Select"},"admin":{"confirmdeletecomments":"You are about to delete comments, are you sure?","confirmation":"Confirmation"},"theme_remui":{"searchcatplaceholdertext":"Search categories","footersettings":"Footer","coursesettings":"Course Page","noresutssearchmsg":"<h4 class ='p-p-6 text-center m-0 '>Nothing to Display<\/h4>","searchtotalcount":"Showing {$a} results","searchresultdesctext":"Showing result for","homepagesettings":"Home Page"},"local_remuihomepage":{"sectionupdated":"Section updated successfully. Publish to apply changes.","sectiondeleted":"Section deleted successfully. Publish to apply changes.","slidersection":"Slider Section","aboutussection":"About us Section","contactsection":"Contact Section","featuresection":"Feature Section","coursessection":"Courses Section","teamsection":"Team Section","testimonialsection":"Testimonial Section","htmlsection":"Html Section","separatorsection":"Separator Section","addsection":"Click to Add Section","homepagesettings":"Home Page Settings"},"debug":{"debuginfo":"Debug info","line":"Line","stacktrace":"Stack trace"},"langconfig":{"labelsep":": "}};
+//]]>
+</script>
+<script>
+//<![CDATA[
+var remuiFontSelect = "2";var remuiFontName = "Inter";var transparentheader = "1";var appearanimation = "1";var appearanimationstyle = "animation-slide-left-right";
+//]]>
+</script>
+<script>
+//<![CDATA[
+(function() {Y.use("moodle-filter_mathjaxloader-loader",function() {M.filter_mathjaxloader.configure({"mathjaxconfig":"\nMathJax.Hub.Config({\n    config: [\"Accessible.js\", \"Safe.js\"],\n    errorSettings: { message: [\"!\"] },\n    skipStartupTypeset: true,\n    messageStyle: \"none\"\n});\n","lang":"en"});
+});
+M.util.help_popups.setup(Y);
+ M.util.js_pending('random67e96bfd2fcc22'); Y.on('domready', function() { M.util.js_complete("init");  M.util.js_complete('random67e96bfd2fcc22'); });
+})();
+//]]>
+</script>
+
+    
+                </div>
+                <div class="footer-section ">
+                    <div class="footer-poweredby">Powered by <a href="https://moodle.com/">Moodle</a></div>
+    
+                </div>
+            </div>
+            <div class="footer-mainsection-wrapper">
+                
+                <div class="footerdata">
+                    <div id="footer-column-1" class="footer-section-wrapper " style="">
+                        <div class="footer-menu menu- d-none">
+                            <h6 class="h-semibold-6 mb-0 ftr-column-title">Important links</h6>
+                            <hr class="d-sm-block d-md-none my-0 ">
+                            <div class="footer-menu-list">
+                            </div>
+                        </div>
+                
+                        <div class="custom-html ">
+                            <div class="contenthtml">
+                                <h6 class="h-semibold-6 mb-0 ftr-column-title">Important links</h6>
+                                <hr class="d-sm-block d-md-none my-0">
+                                <div class="section-html-content">
+                                   <p class="p-0 m-0">
+                                    </p><p><strong><a href="https://kusoma.ku.ac.ke/mod/forum/discuss.php?d=1035" target="_blank" rel="noreferrer noopener">Welcome to the platform</a></strong></p>
+<p><strong><a href="https://kusoma.ku.ac.ke/mod/forum/discuss.php?d=1034" target="_blank" rel="noreferrer noopener">Netiquette</a></strong></p>
+                                   <p></p>
+                                </div>
+                            </div>
+                            <div class="contentsocial social-links d-none">
+                                <a href="https://www.facebook.com/KUDSVOL" class="social-facebook text-decoration-none" title="Follow me on facebook"><i class="icon edw-icon edw-icon-Facebook"></i></a>
+                                <a href="https://twitter.com/KUDigitalSchool" class="social-twitter text-decoration-none" title="Follow me on twitter"><i class="icon edw-icon edw-icon-Twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-column-2" class="footer-section-wrapper " style="">
+                        <div class="footer-menu menu- d-none">
+                            <h6 class="h-semibold-6 mb-0 ftr-column-title">Websites</h6>
+                            <hr class="d-sm-block d-md-none my-0 ">
+                            <div class="footer-menu-list">
+                            </div>
+                        </div>
+                
+                        <div class="custom-html ">
+                            <div class="contenthtml">
+                                <h6 class="h-semibold-6 mb-0 ftr-column-title">Websites</h6>
+                                <hr class="d-sm-block d-md-none my-0">
+                                <div class="section-html-content">
+                                   <p class="p-0 m-0">
+                                    </p><p><strong><span style="font-size:small;"><a href="http://www.ku.ac.ke/" target="_blank" rel="noreferrer noopener">KU Website</a></span></strong><br><strong><span style="font-size:small;"><a href="http://www.ku.ac.ke/dsvol/" target="_blank" rel="noreferrer noopener">Digital School Website</a></span></strong></p>
+<p><a href="https://lms-cloudapi.ku.ac.ke/modules/" target="_blank" rel="noreferrer noopener"><strong><span style="font-size:small;">Modules system</span></strong></a></p>
+                                   <p></p>
+                                </div>
+                            </div>
+                            <div class="contentsocial social-links d-none">
+                                <a href="https://www.facebook.com/KUDSVOL" class="social-facebook text-decoration-none" title="Follow me on facebook"><i class="icon edw-icon edw-icon-Facebook"></i></a>
+                                <a href="https://twitter.com/KUDigitalSchool" class="social-twitter text-decoration-none" title="Follow me on twitter"><i class="icon edw-icon edw-icon-Twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-column-3" class="footer-section-wrapper " style="">
+                        <div class="footer-menu menu- d-none">
+                            <h6 class="h-semibold-6 mb-0 ftr-column-title">Library links</h6>
+                            <hr class="d-sm-block d-md-none my-0 ">
+                            <div class="footer-menu-list">
+                            </div>
+                        </div>
+                
+                        <div class="custom-html ">
+                            <div class="contenthtml">
+                                <h6 class="h-semibold-6 mb-0 ftr-column-title">Library links</h6>
+                                <hr class="d-sm-block d-md-none my-0">
+                                <div class="section-html-content">
+                                   <p class="p-0 m-0">
+                                    </p><p><span style="font-size:small;"><strong><a href="https://library.ku.ac.ke/" target="_blank" rel="noreferrer noopener">Library Website</a></strong></span></p>
+<p><span style="font-size:small;"><strong><a href="https://mason.deepwebaccess.com/mason__MasonLibrariesOpenEducationResources_5f4/desktop/en/search.html" target="_blank" rel="noreferrer noopener">Open Education Resources</a></strong></span></p>
+                                   <p></p>
+                                </div>
+                            </div>
+                            <div class="contentsocial social-links d-none">
+                                <a href="https://www.facebook.com/KUDSVOL" class="social-facebook text-decoration-none" title="Follow me on facebook"><i class="icon edw-icon edw-icon-Facebook"></i></a>
+                                <a href="https://twitter.com/KUDigitalSchool" class="social-twitter text-decoration-none" title="Follow me on twitter"><i class="icon edw-icon edw-icon-Twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="footer-column-4" class="footer-section-wrapper " style="">
+                        <div class="footer-menu menu- d-none">
+                            <h6 class="h-semibold-6 mb-0 ftr-column-title">Contact Us</h6>
+                            <hr class="d-sm-block d-md-none my-0 ">
+                            <div class="footer-menu-list">
+                            </div>
+                        </div>
+                
+                        <div class="custom-html ">
+                            <div class="contenthtml">
+                                <h6 class="h-semibold-6 mb-0 ftr-column-title">Contact Us</h6>
+                                <hr class="d-sm-block d-md-none my-0">
+                                <div class="section-html-content">
+                                   <p class="p-0 m-0">
+                                    </p><p><span style="font-size:small;"><strong>DIGITAL SCHOOL</strong></span></p>
+<p><span style="font-size:small;">Mobile: 0719 739 438, 0719 739 445, 0716 208 832, 0736 244 464</span><br><span style="font-size:small;">Tel: 020 870 3288 </span><br><span style="font-size:small;">Email: <a href="mailto:dean-dsvol@ku.ac.ke">dean-dsvol@ku.ac.ke</a></span></p>
+<p><span style="font-size:small;"><strong><strong>CONTINUING EDUCATION PROGRAMMES</strong></strong></span></p>
+<p><span style="font-size:medium;"><span style="font-size:small;">Phone: 020 870 4275 or 0708 649 560<strong><br></strong>Email: <a href="mailto:dsvolcoord-cep@ku.ac.ke">dsvolcoord-cep@ku.ac.ke</a></span><strong><br></strong></span></p>
+                                   <p></p>
+                                </div>
+                            </div>
+                            <div class="contentsocial social-links d-none">
+                                <a href="https://www.facebook.com/KUDSVOL" class="social-facebook text-decoration-none" title="Follow me on facebook"><i class="icon edw-icon edw-icon-Facebook"></i></a>
+                                <a href="https://twitter.com/KUDigitalSchool" class="social-twitter text-decoration-none" title="Follow me on twitter"><i class="icon edw-icon edw-icon-Twitter"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr class="d-block mb-0">
+            </div>
+            <div class="footer-secondarysection-wrapper">
+                <div class="footer-copyright-wrapper " data-site="KU Digital Learning Platform">
+                    <div class="d-none secondary-footer-logo">
+                        <div class="navbar-logo-footer-wrapper d-none">
+                            <a href="https://kusoma.ku.ac.ke/" class="navbar-brand d-flex  m-0 p-0 aabtn footer-logo" aria-label="KUDLP - Brand Name">
+    
+                            <img src="./background_files/favicon.png" class="navbar-brand-logo logomini">
+    
+    
+                        </a>
+                        </div>
+    
+                        <div class="footer-diff-logo ">
+                            <a href="https://kusoma.ku.ac.ke/" class="navbar-brand d-flex m-0 p-0 aabtn footer-logo" aria-label="KUDLP - Brand Name">
+                            <img src="./background_files/logo.png" class="navbar-brand-logo logomini">
+                        </a>
+                        </div>
+                    </div>
+                    <div class="footer-content-debugging footer-dark">
+                        <div class="footer-content-debugging-wrapper footer-dark-inner ">
+                            
+                            <div class="site-footer-legal ">
+                                <a class="footer-privacy-policy
+                                    
+                                    d-block" href="https://kusoma.ku.ac.ke/#">Privacy Policy
+                                </a>
+                            
+                                <a class="footer-terms-and-conditions
+                                    d-none
+                                    " href="https://kusoma.ku.ac.ke/#">Terms &amp; Conditions
+                                </a>
+                                <a class="footer-bottomtext" href="https://ku.ac.ke/dsvol/" target="_blank"><div class="text_to_html">Digital School of Virtual and Open Learning, Kenyatta University</div></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="copyright-content secondary-footer-copyright " data-site="KU Digital Learning Platform">
+                        <p class=" mb-0">@2025. All rights reserved. KU Digital Learning Platform</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+    
+</div><div id="yui3-css-stamp" style="position: absolute !important; visibility: hidden !important" class=""></div>
+
+
+
+
+
+</body></html>

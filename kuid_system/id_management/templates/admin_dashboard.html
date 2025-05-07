@@ -1,0 +1,134 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container">
+    <h2 class="mb-4 text-center fw-bold">Administrator Dashboard</h2>
+
+    <!-- Found IDs Section -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="card shadow mb-4">
+                <div class="card-header bg-primary text-white">
+                    <h4 class="mb-0"><i class="fas fa-id-badge"></i> Found IDs</h4>
+                </div>
+                <div class="card-body">
+                    {% if found_ids %}
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-primary">
+                                <tr>
+                                    <th>ID Number</th>
+                                    <th>Student Name</th>
+                                    <th>Date Found</th>
+                                    <th>Action</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for id in found_ids %}
+                                <tr>
+                                    <td>{{ id.id_number }}</td>
+                                    <td>{{ id.student_name }}</td>
+                                    <td>{{ id.found_date|date:"M d, Y" }}</td>
+                                    <td>
+                                        <a href="{% url 'admin:id_management_studentid_change' id.pk %}" class="btn btn-warning btn-sm">
+                                            <i class="fas fa-edit"></i> Edit
+                                        </a>
+                                    </td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-center text-muted">No found IDs in the system.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Returned IDs Section -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="card shadow mb-4">
+                <div class="card-header bg-success text-white">
+                    <h4 class="mb-0"><i class="fas fa-check-circle"></i> Returned IDs</h4>
+                </div>
+                <div class="card-body">
+                    {% if returned_ids %}
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-success">
+                                <tr>
+                                    <th>ID Number</th>
+                                    <th>Student Name</th>
+                                    <th>Date Returned</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for id in returned_ids %}
+                                <tr>
+                                    <td>{{ id.id_number }}</td>
+                                    <td>{{ id.student_name }}</td>
+                                    <td>{{ id.date_claimed|date:"M d, Y" }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-center text-muted">No IDs have been returned yet.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Lost IDs Section -->
+    <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-10">
+            <div class="card shadow mb-4">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0"><i class="fas fa-exclamation-circle"></i> Lost IDs</h4>
+                </div>
+                <div class="card-body">
+                    {% if lost_ids %}
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover">
+                            <thead class="table-danger">
+                                <tr>
+                                    <th>ID Number</th>
+                                    <th>Student Name</th>
+                                    <th>Date Lost</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for id in lost_ids %}
+                                <tr>
+                                    <td>{{ id.id_number }}</td>
+                                    <td>{{ id.student_name }}</td>
+                                    <td>{{ id.lost_date|date:"M d, Y" }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                    {% else %}
+                    <p class="text-center text-muted">No lost IDs reported.</p>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Action Buttons -->
+    <div class="text-center mt-4">
+        <a href="{% url 'add-id' %}" class="btn btn-success me-2">
+            <i class="fas fa-plus-circle"></i> Add Found ID
+        </a>
+        <a href="{% url 'report-lost-id' %}" class="btn btn-danger">
+            <i class="fas fa-exclamation-triangle"></i> Report Lost ID
+        </a>
+    </div>
+</div>
+{% endblock %}

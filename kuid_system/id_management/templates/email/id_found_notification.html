@@ -1,0 +1,31 @@
+<!-- templates/id_management/email/id_found_notification.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your KU ID Has Been Found</title>
+</head>
+<body>
+    <h2>Hello {{ student_name }},</h2>
+    
+    <p>We're pleased to inform you that your Kenyatta University ID card has been found!</p>
+    
+    <h3>Details:</h3>
+    <ul>
+        <li><strong>ID Number:</strong> {{ id_number }}</li>
+        <li><strong>Found Location:</strong> {{ found_location }}</li>
+        <li><strong>Found Date:</strong> {{ found_date|date:"F j, Y" }}</li>
+    </ul>
+    
+    <h3>How to Claim Your ID:</h3>
+    <ol>
+        <li>Visit the KU Lost & Found ID system at https://ids.ku.ac.ke</li>
+        <li>Search for your ID</li>
+        <li>Use this verification code to claim it: <strong>{{ verification_code }}</strong></li>
+    </ol>
+    
+    <p>If you didn't lose your ID, please contact the university administration immediately.</p>
+    
+    <p>Best regards,<br>
+    Kenyatta University Administration</p>
+</body>
+</html>
